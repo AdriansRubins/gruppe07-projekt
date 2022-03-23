@@ -19,10 +19,10 @@
         <div class="item item2">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Bernhard</a></li>
-                    <li><a href="#">Jeremias</a></li>
-                    <li><a href="#">Adrians</a></li>
-                    <li><a href="#">Vicky</a></li>
+                    <li><a href="#">Startseite</a></li>
+                    <li><a href="#">Leistungen</a></li>
+                    <li><a href="#">Autos</a></li>
+                    <li><a href="#">Kontakt</a></li>
 
                 </ul>
             </nav>
@@ -36,20 +36,20 @@
     <div class="showcase">
         <div class="bottom-layer">
             <div class="div left">
-                <img class="background" src="steve.jpeg" alt="one" height="100%" width="100%">
+                <img class="background" src="https://wallpapercave.com/wp/wp8881621.jpg" alt="one" height="100%" width="100%">
             </div>
-            <div class="div right"></div>
+            <div class="div right">
+                <img class="background2" src="https://i.pinimg.com/564x/e7/e5/26/e7e526848a9fcb210220deda50028fd7.jpg" alt="one" height="100%" width="100%">
+            </div>
         </div>
         <div class="top-layer">
             <div class="text">
                 <div class="slideFromLeft"><h1>Know-</h1></div>
-                <h1 class="period slideFromRight"> Us!</h1>
+                <h1 class="period slideFromRight"> Cars!</h1>
 
             </div>
         </div>
     </div>
-
-
 
 </div>
 
