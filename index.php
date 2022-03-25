@@ -13,7 +13,7 @@
     </div>
     <div class="top-layer">
         <div class="text">
-            <div class="left"><h1 id="know">Know-</h1></div>
+            <div class="left"><h1 id="know">Experience-</h1></div>
             <h1 id="period"> Cars!</h1>
 
         </div>
