@@ -8,6 +8,31 @@
     box-sizing: border-box;
 }
 
+.indexgrid{
+    display: grid;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 40px;
+    margin-top: 0;
+    margin-right: 50px;
+
+}
+
+.des {
+    display: inline-block;
+    background-color: black;
+    margin-top: 0;
+    margin-right: 50px;
+    width: auto;
+    height: auto;
+    text-align: end;
+
+}
+.des2{
+    font-family: "Gloria Hallelujah", cursive;
+
+
+}
+
 
 
 li,a,button,p {
@@ -31,7 +56,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 0px 0px 20px;
-    background-image: url("https://images.unsplash.com/photo-1532949293134-3eb646d213f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/412/259/non_2x/flat-abstract-blue-background-free-vector.jpg");
     height: 100px;
     box-shadow: 2px 2px 50px 2px #2660B6;
     position: fixed;
@@ -80,6 +105,7 @@ button:hover {
     display: grid;
     margin-top: 0;
     max-width: 100%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/953/042/non_2x/colourful-textured-painting-background-free-vector.jpg");
 }
 .bottom-layer,
 .top-layer {
@@ -88,18 +114,19 @@ button:hover {
 
 .bottom-layer {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 400px 400px;
     width: 50%;
-    height: 60vh;
-    margin: 200px;
+    height: 40vh;
+    margin: 170px 40px 20px 600px;
     padding: 0;
 }
 
 .top-layer {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 80px 40px 20px 0px;
 }
 
 .text {
@@ -114,12 +141,33 @@ button:hover {
 
 #period {
     color: black;
-    text-shadow: 6px 6px 6px #21879b;
+    text-shadow: 6px 6px 6px #B4D2FF;
     font-family: "Gloria Hallelujah", cursive;
 }
 
 #know {
     color: black;
-    text-shadow: 6px 6px 10px #e45046;
+    text-shadow: 10px 9px 10px whitesmoke;
     font-family: "Gloria Hallelujah", cursive;
 }
+
+.us{
+    display: grid;
+    font-family: "Gloria Hallelujah", cursive;
+    margin: 20px 40px 20px 800px;
+    text-align: end;
+    padding: 0px 20px 0px 0px;
+    background-image: url("https://img.freepik.com/free-vector/watercolour-background-with-light-blue-stains_23-2148525000.jpg?w=900");
+    border-radius: 50px;
+
+}
+#aboutUs{
+    font-size: 30px;
+}
+
+.para{
+    display: grid;
+    margin: 20px 40px 20px 660px;
+
+}
+

@@ -1,7 +1,6 @@
 
 <?php include ('./php/templates/header.php'); ?>
 
-<h1>Index page</h1>
 <div class="showcase">
     <div class="bottom-layer">
         <div class="div left">
@@ -19,6 +18,19 @@
         </div>
     </div>
 </div>
+
+<div class="us">
+    <h1 id="aboutUs">About us!</h1>
+
+</div>
+
+<div class="para">
+    <img src="./assets/images/us3-modified.png">
+
+</div>
+
+
 <?php include ('./php/templates/footer.php'); ?>
+
 </body>
 </html>
