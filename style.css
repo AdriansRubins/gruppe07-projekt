@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
@@ -6,6 +7,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 
 
 li,a,button,p {
@@ -30,8 +32,11 @@ header {
     align-items: center;
     padding: 0px 0px 0px 20px;
     background-image: url("https://images.unsplash.com/photo-1532949293134-3eb646d213f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    height: 200px;
+    height: 100px;
     box-shadow: 2px 2px 50px 2px #2660B6;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav__links {
@@ -70,4 +75,51 @@ button:hover {
     color: black;
     box-shadow: 0px 5px 5px 0px black;
 
+}
+.showcase {
+    display: grid;
+    margin-top: 0;
+    max-width: 100%;
+}
+.bottom-layer,
+.top-layer {
+    grid-area: 1/1;
+}
+
+.bottom-layer {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    width: 50%;
+    height: 60vh;
+    margin: 200px;
+    padding: 0;
+}
+
+.top-layer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-family: "Didact Gothic", "Helvetica", sans-serif;
+    font-size: 5vw;
+    letter-spacing: 3px;
+}
+
+#period {
+    color: black;
+    text-shadow: 6px 6px 6px #21879b;
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+#know {
+    color: black;
+    text-shadow: 6px 6px 10px #e45046;
+    font-family: "Gloria Hallelujah", cursive;
 }
