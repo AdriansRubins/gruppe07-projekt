@@ -149,7 +149,7 @@ button:hover ,button.active{
 #des{
     grid-area: des;
     display: grid;
-    margin: 20px 40px 20px 40px;
+    margin: 100px 40px 20px 40px;
     text-align: center;
     padding: 20px 20px 20px 20px;
 
@@ -159,7 +159,6 @@ button:hover ,button.active{
 #text{
     font-family: "Gloria Hallelujah", cursive;
     color: black;
-    text-shadow: 10px 9px 10px white;
 
 }
 
@@ -194,6 +193,9 @@ button:hover ,button.active{
         margin: 20px 300px 20px 300px;
         text-align: center;
         padding: 20px 20px 20px 20px;
+    }
+    #text{
+        color:white;
     }
 
 
