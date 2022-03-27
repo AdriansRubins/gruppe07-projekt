@@ -1,7 +1,7 @@
 <?php include ('./php/templates/header.php'); ?>
 <div class="servicegrid">
     <div id="showcase">
-        <h1 id="exp">Experience-</h1>
+        <h1 id="exp">Explore-</h1>
         <h1 id="cars">Cars!</h1>
     </div>
     <div id="about2">

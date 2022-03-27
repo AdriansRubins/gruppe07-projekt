@@ -1,5 +1,5 @@
 <?php include ('./php/templates/header.php'); ?>
-<div class="servicegrid">
+<div class="leistungsgrid">
     <h1>This is service page!</h1>
 </div>
 <?php include ('./php/templates/footer.php'); ?>
@@ -8,7 +8,7 @@
 
 
 <style>
-    .servicegrid{
+    .leistungsgrid{
         display: grid;
         margin-top: 150px;
     }

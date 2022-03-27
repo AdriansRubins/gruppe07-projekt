@@ -33,6 +33,7 @@ header {
     padding: 0px 0px 0px 20px;
     background-image: url("https://static.vecteezy.com/system/resources/previews/002/412/259/non_2x/flat-abstract-blue-background-free-vector.jpg");
     height: 100px;
+    background-image: cover;
     box-shadow: 2px 2px 50px 2px #2660B6;
     position: fixed;
     top: 0;
@@ -90,6 +91,7 @@ button:hover {
 
     background-image: url("https://static.vecteezy.com/system/resources/previews/001/953/042/non_2x/colourful-textured-painting-background-free-vector.jpg");
     grid-gap: 0.2rem;
+    background-size: cover;
 
 }
 
