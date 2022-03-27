@@ -90,7 +90,7 @@ button:hover ,button.active{
   "des des des"
   "footer footer footer";
 
-    background-image: url("https://static.vecteezy.com/system/resources/previews/001/953/042/non_2x/colourful-textured-painting-background-free-vector.jpg");
+    background-image: url("./assets/images/auto4.jpg");
     grid-gap: 0.2rem;
     background-size: cover;
 
@@ -120,7 +120,7 @@ button:hover ,button.active{
     grid-area: cars;
     text-align: center;
     color: black;
-    text-shadow: 10px 9px 10px #5682C4;
+    text-shadow: 10px 9px 10px white;
     font-size: 8vw;
     font-family: "Gloria Hallelujah", cursive;
 }
@@ -129,7 +129,7 @@ button:hover ,button.active{
 #about2{
     grid-area: about2;
     display: grid;
-    margin: 20px 500px 20px 500px;
+    margin: 300px 500px 20px 500px;
     text-align: center;
     padding: 20px 20px 20px 20px;
     background-color: black;
@@ -159,6 +159,7 @@ button:hover ,button.active{
 #text{
     font-family: "Gloria Hallelujah", cursive;
     color: black;
+    text-shadow: 10px 9px 10px white;
 
 }
 
