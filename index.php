@@ -1,36 +1,27 @@
-
 <?php include ('./php/templates/header.php'); ?>
-
-<div class="showcase">
-    <div class="bottom-layer">
-        <div class="div left">
-            <img class="background" src="https://wallpapercave.com/wp/wp8881621.jpg" alt="one" height="100%" width="100%">
-        </div>
-        <div class="div right">
-            <img class="background2" src="https://i.pinimg.com/564x/e7/e5/26/e7e526848a9fcb210220deda50028fd7.jpg" alt="one" height="100%" width="100%">
-        </div>
+<div class="servicegrid">
+    <div id="showcase">
+        <h1 id="exp">Experience-</h1>
+        <h1 id="cars">Cars!</h1>
     </div>
-    <div class="top-layer">
-        <div class="text">
-            <div class="left"><h1 id="know">Experience-</h1></div>
-            <h1 id="period"> Cars!</h1>
-
-        </div>
+    <div id="about2">
+        <span id="us2">About us!</span>
     </div>
+    <div id="des">
+        <p id="text">
+            Auto-care is a fictive website created by Group 7 TINF21 for Web Engineering1 Project, Fall Winter Semester 2021.
+            Auto-care deals everything related to automobiles. With a variety of new and second-hand cars, Auto-care has
+            been one of the leading Auto dealers in Duale Hochschule Mosbach Baden-Württemberg Campus Bad Mergentheim.
+            We provides quite a few services to keep your vehicle retain texture and smooth functioning of mechanical parts.
+            Enjoy the webiste tour!
+        </p>
+
+    </div>
+    <div id="footer">
+        <?php include ('./php/templates/footer.php'); ?>
+    </div>
+
 </div>
-
-<div class="us">
-    <h1 id="aboutUs">About us!</h1>
-
-</div>
-
-<div class="para">
-    <img src="./assets/images/us3-modified.png">
-
-</div>
-
-
-<?php include ('./php/templates/footer.php'); ?>
 
 </body>
 </html>

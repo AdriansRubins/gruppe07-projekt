@@ -8,31 +8,6 @@
     box-sizing: border-box;
 }
 
-.indexgrid{
-    display: grid;
-    font-family: "Gloria Hallelujah", cursive;
-    font-size: 40px;
-    margin-top: 0;
-    margin-right: 50px;
-
-}
-
-.des {
-    display: inline-block;
-    background-color: black;
-    margin-top: 0;
-    margin-right: 50px;
-    width: auto;
-    height: auto;
-    text-align: end;
-
-}
-.des2{
-    font-family: "Gloria Hallelujah", cursive;
-
-
-}
-
 
 
 li,a,button,p {
@@ -44,8 +19,8 @@ li,a,button,p {
 
 }
 #company{
-    font-size: 60px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: 400;
     font-family: 'Black Han Sans', sans-serif;
     text-shadow: 10px 10px 15px #33383E;
     color: white;
@@ -101,73 +76,122 @@ button:hover {
     box-shadow: 0px 5px 5px 0px black;
 
 }
-.showcase {
+.servicegrid{
     display: grid;
-    margin-top: 0;
-    max-width: 100%;
+    margin-top: 105px;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-rows: 4fr 0.4fr 1.2fr 1fr;
+    grid-template-areas:
+  "showcase showcase showcase"
+  "about2 about2 about2"
+  "des des des"
+  "footer footer footer";
+
     background-image: url("https://static.vecteezy.com/system/resources/previews/001/953/042/non_2x/colourful-textured-painting-background-free-vector.jpg");
-}
-.bottom-layer,
-.top-layer {
-    grid-area: 1/1;
+    grid-gap: 0.2rem;
+
 }
 
-.bottom-layer {
-    display: grid;
-    grid-template-columns: 400px 400px;
-    width: 50%;
-    height: 40vh;
-    margin: 170px 40px 20px 600px;
-    padding: 0;
-}
-
-.top-layer {
-    height: 60vh;
-    display: flex;
+#showcase{
+    grid-area: showcase;
+    display:flex;
+    padding: 80px 0px 0px 0px;
     justify-content: center;
-    align-items: center;
-    margin: 80px 40px 20px 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "exp cars";
+
+
 }
 
-.text {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    font-family: "Didact Gothic", "Helvetica", sans-serif;
-    font-size: 5vw;
-    letter-spacing: 3px;
-}
-
-#period {
-    color: black;
-    text-shadow: 6px 6px 6px #B4D2FF;
-    font-family: "Gloria Hallelujah", cursive;
-}
-
-#know {
+#exp{
+    grid-area: exp;
+    text-align: center;
     color: black;
     text-shadow: 10px 9px 10px whitesmoke;
+    font-size: 8vw;
+    font-family: "Gloria Hallelujah", cursive;
+}
+#cars{
+    grid-area: cars;
+    text-align: center;
+    color: black;
+    text-shadow: 10px 9px 10px #5682C4;
+    font-size: 8vw;
     font-family: "Gloria Hallelujah", cursive;
 }
 
-.us{
+
+#about2{
+    grid-area: about2;
     display: grid;
+    margin: 20px 500px 20px 500px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background-color: black;
+    grid-template-columns: minmax(200px 50%);
+
+
+    border-radius: 20px;
+}
+
+#us2{
     font-family: "Gloria Hallelujah", cursive;
-    margin: 20px 40px 20px 800px;
-    text-align: end;
-    padding: 0px 20px 0px 0px;
-    background-image: url("https://img.freepik.com/free-vector/watercolour-background-with-light-blue-stains_23-2148525000.jpg?w=900");
-    border-radius: 50px;
+    color: white;
+    text-align: center;
+    font-size: large;
 
 }
-#aboutUs{
-    font-size: 30px;
-}
-
-.para{
+#des{
+    grid-area: des;
     display: grid;
-    margin: 20px 40px 20px 660px;
+    margin: 20px 40px 20px 40px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+
+    border-radius: 20px;
 
 }
+#text{
+    font-family: "Gloria Hallelujah", cursive;
+    color: black;
+
+}
+
+#footer{
+    background: #1de9b6;
+    grid-area: footer;
+}
+
+@media only screen and (max-width:1200px){
+    .servicegrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+
+        "showcase"
+        "about2"
+        "des"
+        "footer" ;
+
+    }
+    #des{
+        grid-area: des;
+
+        margin: 20px 20px 20px 20px;
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+    }
+    #about2{
+        grid-area: about2;
+
+        margin: 20px 300px 20px 300px;
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+    }
+
+
+}
+
 
