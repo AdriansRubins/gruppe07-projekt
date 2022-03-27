@@ -1,4 +1,7 @@
-<?php include ('./php/templates/header.php'); ?>
+<?php
+$currentPage='autos';
+include ('./php/templates/header.php');
+?>
 <div class="autosgrid">
     <h1>This is autos page!</h1>
 </div>
@@ -13,3 +16,5 @@
         margin-top: 150px;
     }
 </style>
+
+

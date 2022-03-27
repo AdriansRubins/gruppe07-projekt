@@ -1,4 +1,8 @@
-<?php include ('./php/templates/header.php'); ?>
+<?php
+$currentPage='index';
+include ('./php/templates/header.php');
+
+?>
 <div class="servicegrid">
     <div id="showcase">
         <h1 id="exp">Explore-</h1>
