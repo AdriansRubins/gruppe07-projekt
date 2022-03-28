@@ -129,11 +129,12 @@ button:hover ,button.active{
 #about2{
     grid-area: about2;
     display: grid;
-    margin: 300px 500px 20px 500px;
+    margin: 400px 500px 20px 500px;
     text-align: center;
     padding: 20px 20px 20px 20px;
     background-color: black;
     grid-template-columns: minmax(200px 50%);
+
 
 
     border-radius: 20px;
