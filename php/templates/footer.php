@@ -30,7 +30,7 @@
 
     footer{
         padding-top: 30px;
-        background: #09306A;
+        background: #4F5153;
         height: auto;
         width: 100vw;
         font-family: "Montserrat",sans-serif;
@@ -39,7 +39,7 @@
         flex-direction: column;
         text-align: center;
         color:white;
-        box-shadow: 2px 2px 50px 2px #2660B6;
+        box-shadow: 2px 2px 50px 2px #8F9091;
 
 
     }
@@ -84,6 +84,7 @@
 
     .socials a:hover i{
         color: aqua;
+
     }
     .socials i:hover{
         transform: scale(1.5)
