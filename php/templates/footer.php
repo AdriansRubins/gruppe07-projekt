@@ -1,6 +1,4 @@
-<head>
 
-</head>
 <div class="divy">
 
     <footer>
@@ -86,6 +84,10 @@
 
     .socials a:hover i{
         color: aqua;
+    }
+    .socials i:hover{
+        transform: scale(1.5)
+
     }
 
     .footer-bottom{
