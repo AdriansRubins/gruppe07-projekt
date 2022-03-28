@@ -4,7 +4,9 @@ include ('./php/templates/header.php');
 ?>
 
 <div class="kontaktgrid">
-    <div class="heading">heading</div>
+    <div class="heading">
+        <h1>Get in touch!</h1>
+    </div>
     <div class="form">form</div>
     <div class="helper">helper</div>
 </div>
@@ -29,15 +31,21 @@ include ('./php/templates/header.php');
     }
     .heading{
         grid-area: heading;
-        background: aqua;
+        background: #5C6F68;
     }
     .form{
         grid-area: form;
-        background: aquamarine;
+        background: #8AA39B;
     }
     .helper{
         grid-area: helper;
-        background: greenyellow;
+        background: #95D9C3;
+    }
+    .heading{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 30px;
+        text-align: start;
+
     }
 
 </style>
