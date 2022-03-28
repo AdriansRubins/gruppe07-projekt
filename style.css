@@ -22,8 +22,8 @@ li,a,button,p {
     font-size: 40px;
     font-weight: 400;
     font-family: 'Black Han Sans', sans-serif;
-    text-shadow: 10px 10px 15px #33383E;
-    color: white;
+    text-shadow: 10px 10px 15px #82888C;
+    color: black;
 }
 
 header {
@@ -31,10 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 0px 0px 20px;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/412/259/non_2x/flat-abstract-blue-background-free-vector.jpg");
     height: 100px;
-    background-image: cover;
-    box-shadow: 2px 2px 50px 2px #2660B6;
     position: fixed;
     top: 0;
     width: 100%;
@@ -72,8 +69,8 @@ button {
 
 
 button:hover ,button.active{
-    background-color: white;
-    color: black;
+    background-color: #82888C;
+    color: white;
     box-shadow: 0px 5px 5px 0px black;
 
 }
@@ -129,7 +126,7 @@ button:hover ,button.active{
 #about2{
     grid-area: about2;
     display: grid;
-    margin: 400px 500px 20px 500px;
+    margin: 350px 500px 20px 500px;
     text-align: center;
     padding: 20px 20px 20px 20px;
     background-color: black;
@@ -197,6 +194,7 @@ button:hover ,button.active{
     }
     #text{
         color:white;
+        text-align: left;
     }
 
 
