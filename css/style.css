@@ -88,7 +88,7 @@ button:hover ,button.active {
   "des des des"
   "footer footer footer";
 
-    background-image: url("./assets/images/auto4.jpg");
+    background-image: url("../assets/images/auto4.jpg");
     grid-gap: 0.2rem;
     background-size: cover;
 
