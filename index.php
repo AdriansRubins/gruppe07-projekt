@@ -20,7 +20,7 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#">Startseite</a></li>
-                    <li><a href="#">Leistungen</a></li>
+                    <li><a href="./php/leistungen.php">Leistungen</a></li>
                     <li><a href="#">Autos</a></li>
                     <li><a href="#">Kontakt</a></li>
 
