@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/servicesstyles.css">
+    <link rel="stylesheet" href="../../css/servicesstyles.css">
     <title>Services</title>
 </head>
     <body>
+    <?php
+    $currentPage='autos';
+    include('./php/templates/header.php');
+    ?>
         <div class="container">
             <header>Header</header>
             <div id="card1">
@@ -23,5 +27,6 @@
             <div id="card6">Content 6</div>
             <footer>Footer</footer>
         </div>
+        <?php include('./php/templates/footer.php'); ?>
     </body>
 </html>

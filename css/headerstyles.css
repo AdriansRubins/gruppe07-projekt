@@ -1,0 +1,34 @@
+#company {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Black Han Sans', sans-serif;
+    text-shadow: 10px 10px 15px #82888C;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav__links {
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: black;
+}
