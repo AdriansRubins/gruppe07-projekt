@@ -117,7 +117,7 @@ include ('./php/templates/header.php');
     .car1-des{
         grid-area: car1-des;
         /*background: #8AA39B;*/
-        padding: 30px 30px 30px 30px;
+        padding: 50px 30px 30px 30px;
 
     }
     #lamborghiniDes{

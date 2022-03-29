@@ -16,6 +16,10 @@
         </div>
         <div class="footer-bottom">
             <p>copyright &copy;2022 Auto-Care. designed by <span>Group 7</span></p>
+            <div class="privacy">
+                <a href="./php/impressum.php" class="impressum">Impressum</a> |
+                <a href="./php/datenschutz.php" class="datenschutz">Datenschutz</a>
+            </div>
         </div>
     </footer>
 </div>
@@ -92,9 +96,11 @@
     }
 
     .footer-bottom{
+        display: flex;
+        justify-content: space-between;
         background: black;
         width: 100vw;
-        padding: 20px 0px;
+        padding: 20px 40px 20px 20px;
         text-align: center;
     }
     .footer-bottom p{
@@ -102,6 +108,7 @@
         word-spacing: 2px;
         text-transform: capitalize;
     }
+
     .footer-bottom span{
         text-transform: uppercase;
         opacity: .4;
