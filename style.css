@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+li,a,button,p {
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+
+}
+#company {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Black Han Sans', sans-serif;
+    text-shadow: 10px 10px 15px #82888C;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav__links {
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav__links li a{
+
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav__links li a:hover {
+
+    color: black;
+
+}
+button {
+    padding: 9px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 5px 5px 0px white;
+
+}
+
+
+button:hover ,button.active {
+    background-color: #82888C;
+    color: white;
+    box-shadow: 0px 5px 5px 0px black;
+
+}
+
+.servicegrid{
+    display: grid;
+    margin-top: 105px;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-rows: 4fr 0.4fr 1.2fr 1fr;
+    grid-template-areas:
+  "showcase showcase showcase"
+  "about2 about2 about2"
+  "des des des"
+  "footer footer footer";
+
+    background-image: url("./assets/images/auto4.jpg");
+    grid-gap: 0.2rem;
+    background-size: cover;
+
+}
+
+#showcase{
+    grid-area: showcase;
+    display:flex;
+    padding: 80px 0px 0px 0px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "exp cars";
+
+
+}
+
+#exp{
+    grid-area: exp;
+    text-align: center;
+    color: black;
+    text-shadow: 10px 9px 10px whitesmoke;
+    font-size: 8vw;
+    font-family: "Gloria Hallelujah", cursive;
+}
+#cars{
+    grid-area: cars;
+    text-align: center;
+    color: black;
+    text-shadow: 10px 9px 10px white;
+    font-size: 8vw;
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+
+#about2{
+    grid-area: about2;
+    display: grid;
+    margin: 350px 500px 20px 500px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background-color: black;
+    grid-template-columns: minmax(200px 50%);
+
+
+
+    border-radius: 20px;
+}
+
+#us2{
+    font-family: "Gloria Hallelujah", cursive;
+    color: white;
+    text-align: center;
+    font-size: large;
+
+}
+#des{
+    grid-area: des;
+    display: grid;
+    margin: 100px 40px 20px 40px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+
+    border-radius: 20px;
+
+}
+#text{
+    font-family: "Gloria Hallelujah", cursive;
+    color: black;
+
+}
+
+#footer{
+    background: #1de9b6;
+    grid-area: footer;
+}
+
+
+@media only screen and (max-width:1200px){
+    .servicegrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+
+        "showcase"
+        "about2"
+        "des"
+        "footer" ;
+
+    }
+    #des{
+        grid-area: des;
+
+        margin: 20px 20px 20px 20px;
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+    }
+    #about2{
+        grid-area: about2;
+
+        margin: 20px 300px 20px 300px;
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+    }
+    #text{
+        color:white;
+        text-align: left;
+    }
+
+
+}
+
+
