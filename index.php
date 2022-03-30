@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/indexstyles.css">
     <title>Auto-care!</title>
 </head>
-<body>
+    <body>
         <?php
         $currentPage='index';
         include ('./php/templates/header.php');
@@ -28,11 +28,8 @@
                     We provides quite a few services to keep your vehicle retain texture and smooth functioning of mechanical parts.
                     Enjoy the webiste tour!
                 </p>
-
             </div>
-            <div id="footer">
-                <?php include ('./php/templates/footer.php'); ?>
-            </div>
+            <?php include ('./php/templates/footer.php'); ?>
         </div>
     </body>
 </html>
