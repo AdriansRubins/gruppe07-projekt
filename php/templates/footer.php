@@ -3,9 +3,9 @@
 
     <footer>
         <div class="footer-content">
-            <h3 id="car-care">Auto-care!</h3>
+            <h3 class="car-care">Auto-care!</h3>
 
-            <p>The only auto dealer in Duale Hochschule Baden-Württemberg Mosbach Campus Bad Mergentheim</p>
+            <p class="autodealder">The only auto dealer in Duale Hochschule Baden-Württemberg Mosbach Campus Bad Mergentheim</p>
 
             <ul class="socials">
                 <li><i class="fa fa-google-plus"></i></li>
@@ -42,12 +42,14 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        color:white;
+        color: white;
         box-shadow: 2px 2px 50px 2px #8F9091;
 
 
     }
     .footer-content{
+
+        font-family: "Montserrat",sans-serif;
 
         display: flex;
         align-items: center;
@@ -68,6 +70,12 @@
         line-height: 28px;
         font-size: 14px;
     }
+    li,a {
+        font-family: "Montserrat",sans-serif;
+        color: white;
+        text-decoration: none;
+
+    }
 
     .socials{
         list-style: none;
@@ -86,22 +94,21 @@
         transition: color .5s ease;
     }
 
-    .socials a:hover i{
-        color: aqua;
 
-    }
     .socials i:hover{
         transform: scale(1.5)
 
     }
 
     .footer-bottom{
+
         display: flex;
         justify-content: space-between;
         background: black;
         width: 100vw;
         padding: 20px 40px 20px 20px;
         text-align: center;
+        color: white;
     }
     .footer-bottom p{
         font-size: 14px;
@@ -128,5 +135,12 @@
     .fa-pinterest:hover{
         color: #BB3317;
     }
+
+    .car-care, .autodealer{
+        font-family: "Montserrat",sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+
 
 </style>

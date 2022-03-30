@@ -2,73 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
 
-
-
-li,a,button,p {
+button {
+    padding: 9px 25px;
+    background-color: black;
     font-family: "Montserrat",sans-serif;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 5px 5px 0px white;
     font-weight: 500;
     font-size: 16px;
     color: white;
     text-decoration: none;
 
 }
-#company {
-    font-size: 40px;
-    font-weight: 400;
-    font-family: 'Black Han Sans', sans-serif;
-    text-shadow: 10px 10px 15px #82888C;
-    color: black;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px 0px 20px;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.nav__links {
-    list-style: none;
-}
-.nav__links li{
-    display: inline-block;
-    padding: 0px 20px;
-
-}
-
-.nav__links li a{
-
-    transition: all 0.3s ease 0s;
-
-}
-
-.nav__links li a:hover {
-
-    color: black;
-
-}
-button {
-    padding: 9px 25px;
-    background-color: black;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    box-shadow: 0px 5px 5px 0px white;
-
-}
-
-
 button:hover ,button.active {
     background-color: #82888C;
     color: white;
@@ -76,9 +25,81 @@ button:hover ,button.active {
 
 }
 
+
+nav{
+    height: 140px;
+    width: 100%;
+    position: fixed;
+}
+label.logo{
+    color: black;
+    line-height: 110px;
+    padding: 40px 40px 40px 40px;
+    font-weight:bold;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Black Han Sans', sans-serif;
+    text-shadow: 10px 10px 15px #82888C;
+
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 110px;
+    margin: 0 5px;
+
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+
+
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        padding: 10px 20px 50px 20px;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        top: 80px;
+        background: white;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
 .servicegrid{
     display: grid;
-    margin-top: 105px;
+    margin-top: 150px;
     height:100vh;
     grid-template-columns: 1fr 1fr 0.5fr;
     grid-template-rows: 4fr 0.4fr 1.2fr 1fr;
@@ -127,7 +148,7 @@ button:hover ,button.active {
 #about2{
     grid-area: about2;
     display: grid;
-    margin: 350px 500px 20px 500px;
+    margin: 380px 500px 20px 500px;
     text-align: center;
     padding: 20px 20px 20px 20px;
     background-color: black;
@@ -165,6 +186,7 @@ button:hover ,button.active {
     background: #1de9b6;
     grid-area: footer;
 }
+
 
 
 @media only screen and (max-width:1200px){

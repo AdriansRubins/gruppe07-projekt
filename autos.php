@@ -2,6 +2,7 @@
 $currentPage='autos';
 include ('./php/templates/header.php');
 ?>
+<br>
 <div class="topbox">
     <h1 id="Autos"> Autos</h1>
 </div>
@@ -76,12 +77,13 @@ include ('./php/templates/header.php');
 
 
 <style>
+
     .topbox{
         display: grid;
-        margin-top: 150px;
         /*background-color: #86A067;*/
         height: 20vh;
         padding: 40px 30px 0px 40px;
+        margin-top: 140px;
 
     }
     #Autos{
@@ -142,13 +144,13 @@ include ('./php/templates/header.php');
     .car2{
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-template-rows: 70% 30%;
+        grid-template-rows: 30% 70%;
         height: 70vh;
         width: 100vw;
         grid-gap: 0.2rem;
         grid-template-areas:
-        "car2-des car2-foto"
-        "car2-name car2-foto";
+        "car2-name car2-foto"
+        "car2-des car2-foto";
     }
 
     .car2-foto{
@@ -215,7 +217,7 @@ include ('./php/templates/header.php');
     .car3-des{
         grid-area: car3-des;
         /*background: #8AA39B;*/
-        padding: 30px 30px 30px 30px;
+        padding: 50px 30px 30px 30px;
 
 
     }
@@ -234,6 +236,34 @@ include ('./php/templates/header.php');
     }
     #porscheName{
         font-family: "Gloria Hallelujah", cursive;
+
+    }
+    @media only screen and (max-width:600px)
+    {
+        .car1{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 20% 30%;
+            grid-gap: 0.2rem;
+            height: 70vh;
+            width: 100vw;
+            grid-template-areas:
+            "car1-foto"
+            "car1-name"
+            "car1-des";
+        }
+        .car1-des{
+            grid-area: car1-des;
+        }
+        .car1-foto{
+            grid-area: car1-foto
+        }
+        .car1-name{
+            grid-area: car1-name;
+            display: block;
+            padding: 20px 20px 20px 20px;
+            font-size: 16px;
+        }
 
     }
 

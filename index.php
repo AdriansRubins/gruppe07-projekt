@@ -3,6 +3,7 @@ $currentPage='index';
 include ('./php/templates/header.php');
 
 ?>
+<br>
 <div class="servicegrid">
     <div id="showcase">
         <h1 id="exp">Explore-</h1>

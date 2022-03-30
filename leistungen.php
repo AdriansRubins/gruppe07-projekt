@@ -2,6 +2,7 @@
 $currentPage='leistungen';
 include ('./php/templates/header.php');
 ?>
+<br>
 <div class="leistungsgrid">
     <h1>This is service page!</h1>
 </div>
@@ -12,7 +13,7 @@ include ('./php/templates/header.php');
 
 <style>
     .leistungsgrid{
-        display: grid;
         margin-top: 150px;
+        display: grid;
     }
 </style>

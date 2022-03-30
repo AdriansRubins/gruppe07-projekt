@@ -2,6 +2,7 @@
 $currentPage='kontakt';
 include ('./php/templates/header.php');
 ?>
+<br>
 
 <div class="kontaktgrid">
     <div class="heading">
@@ -18,9 +19,8 @@ include ('./php/templates/header.php');
 <style>
     .kontaktgrid{
         display: grid;
-        margin-top: 150px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 0.6fr 2.5fr;
         grid-template-areas:
         "heading heading"
         "form helper";
@@ -28,10 +28,12 @@ include ('./php/templates/header.php');
         width: 100vw;
         grid-gap: 0.2rem;
         height:100vh;
+        margin-top: 140px;
     }
     .heading{
         grid-area: heading;
         background: #5C6F68;
+        padding: 40px 0px 20px 40px;
     }
     .form{
         grid-area: form;
