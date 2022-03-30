@@ -1,6 +1,3 @@
-
-<link rel="stylesheet" href="../../css/headerstyles.css">
-
 <header>
     <h1 id="company">Auto-Care!</h1>
     <nav>
