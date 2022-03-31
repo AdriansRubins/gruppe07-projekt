@@ -3,7 +3,7 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="/usr/local/etc/php/8.1/php-fpm.d" />
-      <path value="" />
+      <path value="$PROJECT_DIR$/../../../../php/pear" />
     </include_path>
   </component>
 </project>
