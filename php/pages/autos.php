@@ -17,24 +17,10 @@
 
 </head>
 <body>
-<nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-
-        </label>
-        <label class="logo">Auto-care!</label>
-        <ul>
-            <li><a  href="../../index.php"><button class="<?php echo $currentPage == 'index' ? 'active' : '' ?>">Startseite</button></a></li>
-            <li><a  href="./leistungen.php"><button class="<?php echo $currentPage == 'leistungen' ? 'active' : '' ?>">Leistungen</button></a></li>
-            <li><a  href="./autos.php"><button class="<?php echo $currentPage == 'autos' ? 'active' : '' ?>">Autos</button></a></li>
-            <li><a  href="../forms/kontakt.php"><button class="<?php echo $currentPage == 'kontakt' ? 'active' : '' ?>">Kontakt</button></a></li>
-
-        </ul>
-    </nav>
-
-  
-
+<?php
+    $currentPage = 'autos';
+    include ('../templates/header.php');
+?>
 <br>
 <div class="topbox">
     <h1 id="Autos"> Autos</h1>
@@ -104,27 +90,9 @@
 
 </div>
 
-<footer>
-    <div class="footer-content">
-        <h3 class="car-care">Auto-care!</h3>
-
-        <p class="autodealder">The only auto dealer in Duale Hochschule Baden-Württemberg Mosbach Campus Bad Mergentheim</p>
-
-        <ul class="socials">
-            <li><i class="fa fa-google-plus"></i></li>
-            <li><i class="fa fa-facebook-f"></i></li>
-            <li><i class="fa fa-twitter"></i></li>
-            <li><i class="fa fa-pinterest"></i></li>
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>copyright &copy;2022 Auto-Care. designed by <span>Group 7</span></p>
-        <div class="privacy">
-            <a href="./impressum.php" class="impressum">Impressum</a> |
-            <a href="./datenschutz.php" class="datenschutz">Datenschutz</a>
-        </div>
-    </div>
-</footer>
+<?php
+include ('../templates/footer.php');
+?>
 
 </body>
 </html>

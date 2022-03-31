@@ -1,6 +1,6 @@
 
 
-
+<link rel="stylesheet" href="../../css/footerstyle.css">
 <footer>
     <div class="footer-content">
         <h3 class="car-care">Auto-care!</h3>
@@ -17,8 +17,8 @@
     <div class="footer-bottom">
         <p>copyright &copy;2022 Auto-Care. designed by <span>Group 7</span></p>
         <div class="privacy">
-            <a href="./php/impressum.php" class="impressum">Impressum</a> |
-            <a href="./php/datenschutz.php" class="datenschutz">Datenschutz</a>
+            <a href="./impressum.php" class="impressum">Impressum</a> |
+            <a href="./datenschutz.php" class="datenschutz">Datenschutz</a>
         </div>
     </div>
 </footer>

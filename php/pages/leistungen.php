@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Play&display=swap" rel="stylesheet">
-    <link href="stylesheet" href="../../assets/fonts/fontawesome-free-6.1.0-web/css/.brands.css">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-free-6.1.0-web/css/.brands.css">
     <link rel="stylesheet" href="../../css/headerstyle.css">
     <link rel="stylesheet" href="../../css/footerstyle.css">
     <link rel="stylesheet" href="../../css/servicestyle.css">
@@ -17,50 +17,27 @@
 
 </head>
 <body>
-<nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-
-        </label>
-        <label class="logo">Auto-care!</label>
-        <ul>
-            <li><a  href="../../index.php"><button class="<?php echo $currentPage == 'index' ? 'active' : '' ?>">Startseite</button></a></li>
-            <li><a  href="leistungen.php"><button class="<?php echo $currentPage == 'leistungen' ? 'active' : '' ?>">Leistungen</button></a></li>
-            <li><a  href="autos.php"><button class="<?php echo $currentPage == 'autos' ? 'active' : '' ?>">Autos</button></a></li>
-            <li><a  href="../forms/kontakt.php"><button class="<?php echo $currentPage == 'kontakt' ? 'active' : '' ?>">Kontakt</button></a></li>
-
-        </ul>
-    </nav>
-
-  
-
-<br>
-<div class="leistungsgrid">
-    <h1>This is service page!</h1>
-</div>
-
-<footer>
-    <div class="footer-content">
-        <h3 class="car-care">Auto-care!</h3>
-
-        <p class="autodealder">The only auto dealer in Duale Hochschule Baden-Württemberg Mosbach Campus Bad Mergentheim</p>
-
-        <ul class="socials">
-            <li><i class="fa fa-google-plus"></i></li>
-            <li><i class="fa fa-facebook-f"></i></li>
-            <li><i class="fa fa-twitter"></i></li>
-            <li><i class="fa fa-pinterest"></i></li>
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>copyright &copy;2022 Auto-Care. designed by <span>Group 7</span></p>
-        <div class="privacy">
-            <a href="./impressum.php" class="impressum">Impressum</a> |
-            <a href="./pages/datenschutz.php" class="datenschutz">Datenschutz</a>
+<?php
+$currentPage = 'leistungen';
+include ('../templates/header.php');
+?>
+<div class="container">
+    <header>Header</header>
+    <div id="card1">
+        <div class="card-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"/></svg>
         </div>
+        <div class="card-header">Card Header</div>
     </div>
-</footer>
+    <div id="card2">Content 2</div>
+    <div id="card3">Content 3</div>
+    <div id="card4">Content 4</div>
+    <div id="card5">Content 5</div>
+    <div id="card6">Content 6</div>
+</div>
+<?php
+    include ('../templates/footer.php');
+?>
 </body>
 </html>
 
