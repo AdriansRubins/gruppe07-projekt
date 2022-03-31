@@ -1,134 +1,200 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+button {
+    padding: 9px 25px;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 5px 5px 0px white;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+button:hover,
+button.active {
+    background-color: #82888c;
+    color: white;
+    box-shadow: 0px 5px 5px 0px black;
+}
 
+nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+label.logo {
+    color: black;
+    line-height: 110px;
+    padding: 40px 40px 40px 40px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    text-shadow: 10px 10px 15px #82888c;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 110px;
+    margin: 0 5px;
+}
 
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
 
-.servicegrid{
+@media (max-width: 880px) {
+    .checkbtn {
+        display: block;
+        padding: 10px 20px 50px 20px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        background: white;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ ul {
+        right: 0;
+    }
+    #text{
+        font-size: 12px;
+    }
+}
+
+.servicegrid {
     display: grid;
-    margin-top: 150px;
-    height:100vh;
-    grid-template-columns: 1fr 1fr 0.5fr;
-    grid-template-rows: 4fr 0.4fr 1.2fr 1fr;
-    grid-template-areas:
-  "showcase showcase showcase"
-  "about2 about2 about2"
-  "des des des"
-  "footer footer footer";
-
+    margin-top: 100px;
+    height: 90vh;
+    width: 100%;
     background-image: url("../assets/images/auto4.jpg");
-    grid-gap: 0.2rem;
     background-size: cover;
-
 }
 
-#showcase{
-    grid-area: showcase;
-    display:flex;
-    padding: 80px 0px 0px 0px;
+#showcase {
+    display: flex;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "exp cars";
-
-
+    margin: 150px 0px 40px 0px;
 }
 
-#exp{
+#exp {
     grid-area: exp;
     text-align: center;
     color: black;
     text-shadow: 10px 9px 10px whitesmoke;
-    font-size: 8vw;
-    font-family: "Gloria Hallelujah", cursive;
-}
-#cars{
-    grid-area: cars;
-    text-align: center;
-    color: black;
-    text-shadow: 10px 9px 10px white;
-    font-size: 8vw;
+    font-size: 10vw;
     font-family: "Gloria Hallelujah", cursive;
 }
 
-
-#about2{
-    grid-area: about2;
+.bottom-layer{
     display: grid;
-    margin: 380px 500px 20px 500px;
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-    background-color: black;
-    grid-template-columns: minmax(200px 50%);
+    grid-template-columns: 1fr 1fr;
+}
+.texti{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.left{
+    background-color: #f8b981;
+
+}
+.right{
+    background-color: #90adc6;
+}
+.top-layer{
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
 
 
-
-    border-radius: 20px;
 }
 
-#us2{
-    font-family: "Gloria Hallelujah", cursive;
+.FromLeft, .FromRight{
+    font-family: 'Anton', sans-serif;
+    font-size: 3vw;
+
+
+}
+.FromRight{
+    padding-left: 0px;
+}
+.FromLeft{
+    padding-right: 10px;
+}
+
+
+
+.wrapper{
+    display: grid;
+    padding: 40px 30vw 40px 30vw;
+    height: 20vh;
+    width: 100%;
+}
+.bottom-layer, .top-layer{
+    grid-area: 1/1;
+}
+.period{
+    font-weight: bold;
+
     color: white;
-    text-align: center;
-    font-size: large;
+}
+
+.texti{
+    letter-spacing: 10px;
+
 
 }
-#des{
+.about{
+    color: black;
+}
+
+
+#des {
     grid-area: des;
     display: grid;
-    margin: 100px 40px 20px 40px;
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    padding: 30px 40px 30px 40px;
 
     border-radius: 20px;
-
 }
-#text{
+#text {
     font-family: "Gloria Hallelujah", cursive;
     color: black;
-
 }
 
-#footer{
+#footer {
     background: #1de9b6;
     grid-area: footer;
-}
-
-
-
-@media only screen and (max-width:1200px){
-    .servicegrid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-
-        "showcase"
-        "about2"
-        "des"
-        "footer" ;
-
-    }
-    #des{
-        grid-area: des;
-
-        margin: 20px 20px 20px 20px;
-        text-align: center;
-        padding: 20px 20px 20px 20px;
-    }
-    #about2{
-        grid-area: about2;
-
-        margin: 20px 300px 20px 300px;
-        text-align: center;
-        padding: 20px 20px 20px 20px;
-    }
-    #text{
-        color:white;
-        text-align: left;
-    }
-
-
 }
 
 
