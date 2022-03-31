@@ -1,0 +1,306 @@
+
+    .topbox{
+        display: grid;
+        /*background-color: #86A067;*/
+        height: 20vh;
+        padding: 40px 30px 0px 40px;
+        margin-top: 140px;
+
+    }
+    #Autos{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 80px;
+        text-align: start;
+    }
+    .car1{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 30% 70%;
+        grid-gap: 0.2rem;
+        height: 70vh;
+        width: 100vw;
+        grid-template-areas:
+        "car1-foto car1-name"
+        "car1-foto car1-des";
+    }
+    .car1-foto{
+        grid-area: car1-foto;
+        /*background: #5C6F68;*/
+        padding: 30px 30px 30px 30px;
+
+
+    }
+    #lamborghiniFoto{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+
+    .car1-des{
+        grid-area: car1-des;
+        /*background: #8AA39B;*/
+        padding: 50px 30px 30px 30px;
+
+    }
+    #lamborghiniDes{
+        font-family: "Gloria Hallelujah", cursive;
+        color: black;
+    }
+
+    .car1-name{
+        grid-area: car1-name;
+        /* background: #95D9C3;*/
+        display: block;
+        padding: 20px 20px 20px 20px;
+        font-size: 23px;
+
+    }
+    #lamborghiniName{
+        font-family: "Gloria Hallelujah", cursive;
+
+    }
+
+
+    .car2{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 30% 70%;
+        height: 70vh;
+        width: 100vw;
+        grid-gap: 0.2rem;
+        grid-template-areas:
+        "car2-name car2-foto"
+        "car2-des car2-foto";
+    }
+
+    .car2-foto{
+        grid-area: car2-foto;
+        /*background: #5C6F68;*/
+        padding: 30px 30px 30px 30px;
+
+    }
+    #teslaModel3{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .car2-des{
+        grid-area: car2-des;
+        /*background: #8AA39B;*/
+        padding: 100px 30px 30px 30px;
+
+
+    }
+    #teslaDes{
+        font-family: "Gloria Hallelujah", cursive;
+        color: black;
+    }
+
+    .car2-name{
+        grid-area: car2-name;
+        /*background: #95D9C3;*/
+        display: block;
+        padding: 20px 20px 30px 30px;
+        font-size: 30px;
+
+    }
+    #teslaModel3Name{
+        font-family: "Gloria Hallelujah", cursive;
+
+    }
+
+
+    .car3{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 30% 70%;
+        height: 70vh;
+        width: 100vw;
+        grid-gap: 0.2rem;
+        grid-template-areas:
+        "car3-foto car3-name"
+        "car3-foto car3-des";
+    }
+    .car3-foto{
+        grid-area: car3-foto;
+        /*background: #5C6F68;*/
+        padding: 30px 30px 30px 30px;
+
+    }
+    #porscheFoto{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .car3-des{
+        grid-area: car3-des;
+        /*background: #8AA39B;*/
+        padding: 50px 30px 30px 30px;
+
+
+    }
+    #porscheDes{
+        font-family: "Gloria Hallelujah", cursive;
+        color: black;
+    }
+
+    .car3-name{
+        grid-area: car3-name;
+        /*background: #95D9C3;*/
+        display: block;
+        padding: 20px 20px 20px 20px;
+        font-size: 25px;
+
+    }
+    #porscheName{
+        font-family: "Gloria Hallelujah", cursive;
+
+    }
+    @media only screen and (max-width:600px)
+    {
+        .car1{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 20% 30%;
+            grid-gap: 0.2rem;
+            height: 70vh;
+            width: 100vw;
+            grid-template-areas:
+            "car1-foto"
+            "car1-name"
+            "car1-des";
+        }
+        .car1-des{
+            grid-area: car1-des;
+        }
+        .car1-foto{
+            grid-area: car1-foto
+        }
+        .car1-name{
+            grid-area: car1-name;
+            display: block;
+            padding: 20px 20px 20px 20px;
+            font-size: 16px;
+        }
+
+    }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer{
+    padding-top: 30px;
+    background: #4F5153;
+    height: auto;
+    width: 100vw;
+    font-family: "Montserrat",sans-serif;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    box-shadow: 2px 2px 50px 2px #8F9091;
+
+
+}
+.footer-content{
+
+    font-family: "Montserrat",sans-serif;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+li,a {
+    font-family: "Montserrat",sans-serif;
+    color: white;
+    text-decoration: none;
+
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials i{
+    font-size: 2rem;
+    transition: color .5s ease;
+}
+
+
+.socials i:hover{
+    transform: scale(1.5)
+
+}
+
+.footer-bottom{
+
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    width: 100vw;
+    padding: 20px 40px 20px 20px;
+    text-align: center;
+    color: white;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.fa-google-plus:hover{
+    color: #E22A06;
+}
+.fa-facebook-f:hover{
+    color: #1E71F5;
+}
+
+.fa-twitter:hover{
+    color: #5C94EE;
+}
+.fa-pinterest:hover{
+    color: #BB3317;
+}
+
+.car-care, .autodealer{
+    font-family: "Montserrat",sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
