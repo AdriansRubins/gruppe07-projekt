@@ -110,68 +110,76 @@ nav ul li {
     font-family: "Gloria Hallelujah", cursive;
 }
 
-.bottom-layer {
+
+.bottom-layer{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.texti {
+.texti{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
-.left {
+.left{
     background-color: #f8b981;
+
 }
-.right {
+.right{
     background-color: #90adc6;
 }
-.top-layer {
-    height: 15vh;
+.top-layer{
+    height: 11vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 80px;
+
+
 }
 
-.FromLeft,
-.FromRight {
-    font-family: "Anton", sans-serif;
-    font-size: 5vw;
+.FromLeft, .FromRight{
+    font-family: 'Anton', sans-serif;
+    font-size: 3vw;
+
+
 }
-.FromRight {
+.FromRight{
     padding-left: 0px;
 }
-.FromLeft {
-    padding-right: 80px;
+.FromLeft{
+    padding-right: 60px;
 }
 
-.wrapper {
+
+
+.wrapper{
     display: grid;
-    padding: 40px 20vw 40px 20vw;
+    padding: 40px 30vw 40px 30vw;
     height: 20vh;
     width: 100%;
 }
-.bottom-layer,
-.top-layer {
+.bottom-layer, .top-layer{
     grid-area: 1/1;
 }
-.period {
+.period{
     font-weight: bold;
 
     color: whitesmoke;
 }
 
-.texti {
+.texti{
     letter-spacing: 10px;
+
+
 }
-.about {
+.about{
     color: grey;
 }
-
 #des {
     grid-area: des;
     display: grid;
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    padding: 30px 40px 30px 40px;
 
     border-radius: 20px;
 }
