@@ -10,24 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Play&display=swap" rel="stylesheet">
     <link href="stylesheet" href="../../assets/fonts/fontawesome-free-6.1.0-web/css/.brands.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/datenschutzAndImpressum.css">
     <title>Auto-care!</title>
 
 </head>
 <body>
-<nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
+<header>
 
-    </label>
-    <label class="logo">Auto-care!</label>
-    <ul>
-        <li><a  href="index.php"><button class="<?php echo $currentPage == 'index' ? 'active' : '' ?>">Startseite</button></a></li>
-        <li><a  href="leistungen.php"><button class="<?php echo $currentPage == 'leistungen' ? 'active' : '' ?>">Leistungen</button></a></li>
-        <li><a  href="autos.php"><button class="<?php echo $currentPage == 'autos' ? 'active' : '' ?>">Autos</button></a></li>
-        <li><a  href="kontakt.php"><button class="<?php echo $currentPage == 'kontakt' ? 'active' : '' ?>">Kontakt</button></a></li>
+    <h1 id="company">Auto-Care!</h1>
+    <nav>
 
-    </ul>
-</nav>
+        <ul class="nav__links">
+            <li><a  href="index.php"><button class="<?php echo $currentPage == 'index' ? 'active' : '' ?>">Startseite</button></a></li>
+            <li><a  href="leistungen.php"><button class="<?php echo $currentPage == 'leistungen' ? 'active' : '' ?>">Leistungen</button></a></li>
+            <li><a  href="autos.php"><button class="<?php echo $currentPage == 'autos' ? 'active' : '' ?>">Autos</button></a></li>
+            <li><a  href="kontakt.php"><button class="<?php echo $currentPage == 'kontakt' ? 'active' : '' ?>">Kontakt</button></a></li>
+        </ul>
+    </nav>
+
+</header>
 
   

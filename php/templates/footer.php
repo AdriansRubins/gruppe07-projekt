@@ -1,3 +1,5 @@
+<?php include('./php/datenschutz.php');?>
+<?php include('./php/impressum.php');?>
 
 <div class="divy">
 
@@ -17,12 +19,14 @@
         <div class="footer-bottom">
             <p>copyright &copy;2022 Auto-Care. designed by <span>Group 7</span></p>
             <div class="privacy">
-                <a href="./php/impressum.php" class="impressum">Impressum</a> |
-                <a href="./php/datenschutz.php" class="datenschutz">Datenschutz</a>
+                <a href="#impressum" class="impressum">Impressum</a> |
+                <a href="#datenschutz" class="datenschutz">Datenschutz</a>
             </div>
         </div>
     </footer>
 </div>
+
+
 
 <style>
     *{
