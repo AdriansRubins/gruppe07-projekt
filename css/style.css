@@ -164,7 +164,7 @@ nav ul li {
 .period{
     font-weight: bold;
 
-    color: whitesmoke;
+    color: white;
 }
 
 .texti{
@@ -173,7 +173,7 @@ nav ul li {
 
 }
 .about{
-    color: grey;
+    color: #4F5153;
 }
 #des {
     grid-area: des;
