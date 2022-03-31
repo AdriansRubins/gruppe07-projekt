@@ -110,7 +110,6 @@ nav ul li {
     font-family: "Gloria Hallelujah", cursive;
 }
 
-
 .bottom-layer{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -147,7 +146,7 @@ nav ul li {
     padding-left: 0px;
 }
 .FromLeft{
-    padding-right: 60px;
+    padding-right: 10px;
 }
 
 
@@ -173,8 +172,10 @@ nav ul li {
 
 }
 .about{
-    color: #4F5153;
+    color: black;
 }
+
+
 #des {
     grid-area: des;
     display: grid;
