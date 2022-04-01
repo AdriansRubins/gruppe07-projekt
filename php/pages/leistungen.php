@@ -100,4 +100,10 @@
     </body>
 </html>
 
-
+<style>
+    .gesamt {
+        background-image: url("../../assets/images/garage.jpg");
+        background-size: 100% 100%;
+        margin-top: 80px;
+    }
+</style>

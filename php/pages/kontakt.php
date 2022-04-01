@@ -40,6 +40,18 @@
                             <input id="mail" name="mail" type="email" class="input" placeholder="example@mail.com" required>
                         </div>
                         <div class="inputfield">
+                            <label>Land</label>
+                            <div class="custom_select">
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="latvia">Latvia</option>
+                                    <option value="india">India</option>
+                                    <option value="england">England</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
                             <label for="telefon">Telefon</label>
                             <input id="telefon" name="telefon" type="tel" pattern="[+]{1}[0-9]{11,14}" class="input" placeholder="+98 123456789">
                         </div>
@@ -111,3 +123,4 @@
         ?>
     </body>
 </html>
+
