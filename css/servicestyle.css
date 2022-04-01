@@ -44,3 +44,10 @@ footer{
 .card-logo{
     text-align: center;
 }
+.card-content{
+
+}
+.card-svg{
+    height: 24px;
+    width: 24px;
+}
