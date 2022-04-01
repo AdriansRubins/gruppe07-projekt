@@ -11,6 +11,16 @@ details.styled summary{
     cursor: pointer;
 }
 
+details.glasstyled summary{
+    outline: none;
+    cursor: pointer;
+}
+
+details.unfallstyled summary{
+    outline: none;
+    cursor: pointer;
+}
+
 details[open].styled summary{
     padding-bottom: 20px;
     color: white;
