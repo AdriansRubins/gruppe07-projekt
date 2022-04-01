@@ -21,6 +21,7 @@ $currentPage = 'kontakt';
 include('../templates/header.php');
 ?>
 <br>
+
 <div class="kontaktgrid">
     <div class="wrapper2">
         <form action="../forms/answer.php" method="post"></form>
@@ -128,11 +129,13 @@ include('../templates/header.php');
         </div>
 
     </div>
+    <div class="footerx">
+        <?php
+        include('../templates/footer.php');
+        ?>
+    </div>
 
 </div>
-<?php
-include('../templates/footer.php');
-?>
 </body>
 </html>
 

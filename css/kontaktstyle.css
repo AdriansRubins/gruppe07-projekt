@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 *{
@@ -12,18 +11,36 @@
 .kontaktgrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7 0.3fr;
+    grid-template-areas:
+        "wrapper2 helper"
+        "footerx footerx";
     border: 1px;
     width: 100vw;
     grid-gap: 0.2rem;
     height:100vh;
     margin-top: 140px;
     background-image: url("../../assets/images/back.jpg");
+    background: cover;
+}
+@media (max-width: 880px) {
+    .kontaktgrid{
+        display: inline-block;
+    }
+    .helper{
+        background: #5E616A;
+    }
+    .avatar1, .avatar2, .avatar3,.avatar4{
+        color: white;
+    }
+
 }
 
 .wrapper2{
     width: 100%;
     padding-left: 5vw;
-    height: 100%;
+    height: 100vh;
+    grid-area: wrapper2;
 }
 
 .wrapper2 .title{
@@ -169,27 +186,18 @@
     margin-bottom: 0;
 }
 
-@media (max-width:420px) {
-    .wrapper2 .form .inputfield{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .wrapper2 .form .inputfield label{
-        margin-bottom: 5px;
-    }
-    .wrapper2 .form .inputfield.terms{
-        flex-direction: row;
-    }
-}
+
 .kontaktform{
     font-size: 40px;
 }
+
 
 .avatar1, .avatar2, .avatar3, .avatar4{
     display: flex;
     justify-content: space-evenly;
 }
 .helper{
+    grid-area: helper;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr;
@@ -202,4 +210,11 @@
     width: 100px;
     border-radius: 50%;
 }
-
+.headingpartner{
+    display: grid;
+    padding: 20px 20px 20px 20px;
+    height: 4vh;
+}
+.footerx{
+    grid-area: footerx;
+}
