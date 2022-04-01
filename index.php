@@ -15,7 +15,7 @@
     </head>
     <body>
         <?php $currentPage = 'index'?>
-        <nav>
+        <nav class="navs">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fa fa-bars"></i>
