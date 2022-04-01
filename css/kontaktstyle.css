@@ -17,13 +17,58 @@
         background: #5C6F68;
         padding: 40px 0px 20px 40px;
     }
+    #nachricht{
+        width: 90%;
+        font-size: x-large;
+        margin-left: 2%;
+    }
+    label{
+        width: 30%;
+        font-size: x-large;
+        font-weight: bold;
+        margin-left: 2%;
+    }
+    .inputfield{
+        width: 30%;
+        font-size: x-large;
+        margin-left: 2%;
+    }
+    #headinghelper{
+        text-align: center;
+    }
+    .Textposition{
+        display: flex;
+    }
+    .unsortedlist{
+        font-size: normal;
+        color: #ffffff;
+        width: 25%;
+        margin: 2% 12.5% 3% 12.5%;
+    }
+    h3{
+        font-size: large;
+        font-weight: bold;
+    }
+    li{
+        font-weight: normal;
+    }
+    .pictures{
+        width: 25%;
+        margin: 2% 12% 0% 12%;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    h1{
+        width: 60%;
+        font-size: xxx-large;
+        margin: 2% 0% 4% 2%;
+    }
     .form{
         grid-area: form;
-        background: #8AA39B;
+        background: #4F5153;
     }
     .helper{
         grid-area: helper;
-        background: #95D9C3;
+        background: #4F5153;
     }
     .heading{
         font-family: 'Black Han Sans', sans-serif;

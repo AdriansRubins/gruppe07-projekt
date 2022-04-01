@@ -23,9 +23,6 @@
 ?>
 <br>
 <div class="kontaktgrid">
-    <div class="heading">
-        <h1>Get in touch!</h1>
-    </div>
     <div class="form">
         <form action="../forms/answer.php" method="post">
             <h1>Konkaktformular</h1>
@@ -39,11 +36,11 @@
             <input id="telefon" class="inputfield" type="text" placeholder="Telefon" name="telefon"><br>
             <label for="nachricht">Ihre Nachricht:</label><br>
             <textarea id="nachricht" class="inputfield" placeholder="Ihre Nachricht" required name="nachricht"></textarea><br>
-            <p id="nachricht"><input type="checkbox" required>Ich erkl채re mich damit einverstanden, dass meine personenbezogenen Daten nur zum Zwecke
+            <p id="nachricht"><input type="checkbox" required>Ich erkläre mich damit einverstanden, dass meine personenbezogenen Daten nur zum Zwecke
                 der Bearbeitung im Rahmen des Kontaktformulars verarbeitet und gespeichert werden.
-                Die Daten werden nur f체r die hier aufgef체hrten Zwecke verwendet und nicht an Dritte weitergegeben.
+                Die Daten werden nur für die hier aufgeführten Zwecke verwendet und nicht an Dritte weitergegeben.
             </p>
-            <button class="inputfield" type="submit">Absenden</button><button class="inputfield" type="reset">Zur체cksetzen</button>
+            <button class="inputfield" type="submit">Absenden</button><button class="inputfield" type="reset">Zurücksetzen</button>
         </form>
     </div>
     <div class="helper">
@@ -52,15 +49,15 @@
         <img class="pictures" src="../../assets/images/2.jpg">
         <div class="Textposition">
             <p>
-            <ul class="text">
-                <h3 class="text">7239202</h3>
+            <ul class="unsortedlist">
+                <h3>7239202</h3>
                 <li>Tel: 01654398936</li>
                 <li>Email: </li>
             </ul>
             </p>
             <p>
-            <ul>
-                <h3 class="text">7239202</h3>
+            <ul class="unsortedlist">
+                <h3>7239202</h3>
                 <li>Tel: 01654398936</li>
                 <li>Email: </li>
             </ul>
@@ -70,17 +67,17 @@
         <img class="pictures" src="../../assets/images/4.jpg">
         <div class="Textposition">
             <p>
-            <ul class="text">
-                <h3 class="text">7239202</h3>
+            <ul class="unsortedlist">
+                <h3>7239202</h3>
                 <li>Tel: 01654398936</li>
                 <li>Email: </li>
             </ul>
             </p>
             <p>
-            <ul>
-                <h3 class="text">7239202</h3>
+            <ul class="unsortedlist">
+                <h3>8577349</h3>
                 <li>Tel: 01654398936</li>
-                <li>Email: </li>
+                <li>Email: ber.schwab.21@lehre.mosbach.dhbw.de</li>
             </ul>
             </p>
         </div>
