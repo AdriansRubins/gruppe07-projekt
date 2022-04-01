@@ -1,214 +1,248 @@
-.button {
-    padding: 9px 25px;
-    background-color: black;
-    font-family: "Montserrat",sans-serif;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    box-shadow: 0px 5px 5px 0px white;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
+
+.topbox{
+    display: grid;
+    /*background-color: #86A067;*/
+    height: 20vh;
+    padding: 40px 30px 0px 40px;
+    margin-top: 140px;
+
 }
-
-.button:hover,
-.button.active {
-    background-color: #82888C;
-    color: white;
-    box-shadow: 0px 5px 5px 0px black;
+#Autos{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 80px;
+    text-align: start;
 }
-
-    .topbox{
-        display: grid;
-        /*background-color: #86A067;*/
-        height: 20vh;
-        padding: 40px 30px 0px 40px;
-        margin-top: 140px;
-
-    }
-    #Autos{
-        font-family: 'Black Han Sans', sans-serif;
-        font-size: 80px;
-        text-align: start;
-    }
-    .car1{
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 30% 70%;
-        grid-gap: 0.2rem;
-        height: 70vh;
-        width: 100vw;
-        grid-template-areas:
+.car1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 30% 70%;
+    grid-gap: 0.2rem;
+    height: 70vh;
+    width: 100vw;
+    grid-template-areas:
         "car1-foto car1-name"
         "car1-foto car1-des";
-    }
-    .car1-foto{
-        grid-area: car1-foto;
-        /*background: #5C6F68;*/
-        padding: 30px 30px 30px 30px;
+}
+.car1-foto{
+    grid-area: car1-foto;
+    /*background: #5C6F68;*/
+    padding: 30px 30px 30px 30px;
 
 
-    }
-    #lamborghiniFoto{
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
-    }
+}
+#lamborghiniFoto{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 
 
-    .car1-des{
-        grid-area: car1-des;
-        /*background: #8AA39B;*/
-        padding: 50px 30px 30px 30px;
+.car1-des{
+    grid-area: car1-des;
+    /*background: #8AA39B;*/
+    padding: 50px 30px 30px 30px;
 
-    }
-    #lamborghiniDes{
-        font-family: "Gloria Hallelujah", cursive;
-        color: black;
-    }
+}
+#lamborghiniDes{
+    font-family: "Gloria Hallelujah", cursive;
+    color: black;
+}
 
-    .car1-name{
-        grid-area: car1-name;
-        /* background: #95D9C3;*/
-        display: block;
-        padding: 20px 20px 20px 20px;
-        font-size: 23px;
+.car1-name{
+    grid-area: car1-name;
+    /* background: #95D9C3;*/
+    display: block;
+    padding: 20px 20px 20px 20px;
+    font-size: 23px;
 
-    }
-    #lamborghiniName{
-        font-family: "Gloria Hallelujah", cursive;
+}
+#lamborghiniName{
+    font-family: "Gloria Hallelujah", cursive;
 
-    }
+}
+#porscheDes, #lamborghiniDes, #teslaDes{
+    font-size: 12px;
+}
 
 
-    .car2{
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 30% 70%;
-        height: 70vh;
-        width: 100vw;
-        grid-gap: 0.2rem;
-        grid-template-areas:
+.car2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 70%;
+    height: 70vh;
+    width: 100vw;
+    grid-gap: 0.2rem;
+    grid-template-areas:
         "car2-name car2-foto"
         "car2-des car2-foto";
-    }
+}
 
-    .car2-foto{
-        grid-area: car2-foto;
-        /*background: #5C6F68;*/
-        padding: 30px 30px 30px 30px;
+.car2-foto{
+    grid-area: car2-foto;
+    /*background: #5C6F68;*/
+    padding: 30px 30px 30px 30px;
 
-    }
-    #teslaModel3{
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
-    }
+}
+#teslaModel3{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 
-    .car2-des{
-        grid-area: car2-des;
-        /*background: #8AA39B;*/
-        padding: 40px 30px 30px 30px;
-
-
-    }
-    #teslaDes{
-        font-family: "Gloria Hallelujah", cursive;
-        color: black;
-    }
-
-    .car2-name{
-        grid-area: car2-name;
-        /*background: #95D9C3;*/
-        display: block;
-        padding: 20px 20px 30px 30px;
-        font-size: 30px;
-
-    }
-    #teslaModel3Name{
-        font-family: "Gloria Hallelujah", cursive;
-
-    }
+.car2-des{
+    grid-area: car2-des;
+    /*background: #8AA39B;*/
+    padding: 40px 30px 30px 30px;
 
 
-    .car3{
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 30% 70%;
-        height: 70vh;
-        width: 100vw;
-        grid-gap: 0.2rem;
-        grid-template-areas:
+}
+#teslaDes{
+    font-family: "Gloria Hallelujah", cursive;
+    color: black;
+}
+
+.car2-name{
+    grid-area: car2-name;
+    /*background: #95D9C3;*/
+    display: block;
+    padding: 20px 20px 30px 30px;
+    font-size: 30px;
+
+}
+#teslaModel3Name{
+    font-family: "Gloria Hallelujah", cursive;
+
+}
+
+
+.car3{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 30% 70%;
+    height: 70vh;
+    width: 100vw;
+    grid-gap: 0.2rem;
+    grid-template-areas:
         "car3-foto car3-name"
         "car3-foto car3-des";
-    }
-    .car3-foto{
-        grid-area: car3-foto;
-        /*background: #5C6F68;*/
-        padding: 30px 30px 30px 30px;
+}
+.car3-foto{
+    grid-area: car3-foto;
+    /*background: #5C6F68;*/
+    padding: 30px 30px 30px 30px;
 
-    }
-    #porscheFoto{
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
-    }
+}
+#porscheFoto{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 
-    .car3-des{
-        grid-area: car3-des;
-        /*background: #8AA39B;*/
-        padding: 50px 30px 30px 30px;
+.car3-des{
+    grid-area: car3-des;
+    /*background: #8AA39B;*/
+    padding: 70px 30px 30px 30px;
 
 
-    }
-    #porscheDes{
-        font-family: "Gloria Hallelujah", cursive;
-        color: black;
-    }
+}
+#porscheDes{
+    font-family: "Gloria Hallelujah", cursive;
+    color: black;
+}
 
-    .car3-name{
-        grid-area: car3-name;
-        /*background: #95D9C3;*/
-        display: block;
-        padding: 20px 20px 20px 20px;
-        font-size: 25px;
+.car3-name{
+    grid-area: car3-name;
+    /*background: #95D9C3;*/
+    display: block;
+    padding: 20px 20px 20px 20px;
+    font-size: 25px;
 
-    }
-    #porscheName{
-        font-family: "Gloria Hallelujah", cursive;
+}
+#porscheName{
+    font-family: "Gloria Hallelujah", cursive;
 
-    }
-    @media only screen and (max-width:600px)
-    {
-        .car1{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 50% 20% 30%;
-            grid-gap: 0.2rem;
-            height: 70vh;
-            width: 100vw;
-            grid-template-areas:
+}
+@media (max-width: 858px){
+
+    .car1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 20% 30%;
+        grid-gap: 0.2rem;
+        height: 70vh;
+        width: 100vw;
+        grid-template-areas:
             "car1-foto"
             "car1-name"
             "car1-des";
-        }
-        .car1-des{
-            grid-area: car1-des;
-        }
-        .car1-foto{
-            grid-area: car1-foto
-        }
-        .car1-name{
-            grid-area: car1-name;
-            display: block;
-            padding: 20px 20px 20px 20px;
-            font-size: 16px;
-        }
-
     }
-    *{
+    .car2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 20% 30%;
+        grid-gap: 0.2rem;
+        height: 70vh;
+        width: 100vw;
+        grid-template-areas:
+            "car2-foto"
+            "car2-name"
+            "car2-des";
+    }
+    #porscheDes, #lamborghiniDes, #teslaDes{
+        font-size: 12px;
+    }
+    .car3{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 20% 30%;
+        grid-gap: 0.2rem;
+        height: 70vh;
+        width: 100vw;
+        grid-template-areas:
+            "car3-foto"
+            "car3-name"
+            "car3-des";
+    }
+    .car1-des{
+        grid-area: car1-des;
+    }
+    .car1-foto{
+        grid-area: car1-foto
+    }
+    .car1-name{
+        grid-area: car1-name;
+        display: block;
+        padding: 20px 20px 20px 20px;
+        font-size: 16px;
+    }
+    .car2-des{
+        grid-area: car2-des;
+    }
+    .car2-foto{
+        grid-area: car2-foto
+    }
+    .car2-name{
+        grid-area: car2-name;
+        display: block;
+        padding: 20px 20px 20px 20px;
+        font-size: 16px;
+    }
+    .car3-des{
+        grid-area: car3-des;
+    }
+    .car3-foto{
+        grid-area: car3-foto
+    }
+    .car3-name{
+        grid-area: car3-name;
+        display: block;
+        padding: 20px 20px 20px 20px;
+        font-size: 16px;
+    }
+
+
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
