@@ -55,7 +55,7 @@ include('../templates/header.php');
             </div>
             <div class="inputfield">
                 <label for="telefon">Telefon</label>
-                <input id="telefon" name="telefon" type="text" class="input" placeholder="+98 123456789">
+                <input id="telefon" name="telefon" type="tel" pattern="[+]{1}[0-9]{11,14}" class="input" placeholder="+98 123456789">
             </div>
             <div class="inputfield">
                 <label for="nachricht">Ihre Nachricht</label>
@@ -63,11 +63,11 @@ include('../templates/header.php');
             </div>
             <div class="inputfield">
                 <label for="plz">PLZ</label>
-                <input id="plz" name="plz" type="text" class="input" required>
+                <input id="plz" name="plz" type="number" class="input" required>
             </div>
             <div class="inputfield terms">
                 <label class="check">
-                    <input type="checkbox" required>
+                    <input id="check" type="checkbox" required>
                     <span class="checkmark"></span>
                 </label>
                 <p>Ich erkläre mich damit einverstanden, dass meine personenbezogenen Daten nur zum Zwecke
