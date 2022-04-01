@@ -23,28 +23,28 @@ include('../templates/header.php');
 <br>
 <div class="kontaktgrid">
     <div class="wrapper2">
-        <form action="../forms/answer.php" method="post"></form>
+        <form action="../forms/answer.php" method="post">
         <div class="form">
             <br>
             <br>
             <h2 class="kontaktform" >Kontaktformular</h2>
             <br>
             <div class="inputfield">
-                <label>Vorname</label>
-                <input id="vn_vorname" type="text" class="input" placeholder="Vorname">
+                <label for="vn_vorname">Vorname</label>
+                <input id="vn_vorname" name="vn_vorname" type="text" class="input" placeholder="Vorname" required>
             </div>
             <div class="inputfield">
-                <label>Nachname</label>
-                <input id="nn_nachname"type="text" class="input" placeholder="Nachname">
+                <label for="nn_nachname">Nachname</label>
+                <input id="nn_nachname" name="nn_nachname"type="text" class="input" placeholder="Nachname" required>
             </div>
             <div class="inputfield">
-                <label>E-Mail</label>
-                <input id="mail"type="mail" class="input" placeholder="example@mail.com" required>
+                <label for="mail">E-Mail</label>
+                <input id="mail" name="mail"type="mail" class="input" placeholder="example@mail.com" required>
             </div>
             <div class="inputfield">
                 <label>Land</label>
-                <div class="custom_select">
-                    <select>
+                <div class="custom_select" >
+                    <select name="country" required>
                         <option value="">Select</option>
                         <option value="germany">Germany</option>
                         <option value="latvia">Latvia</option>
@@ -54,20 +54,20 @@ include('../templates/header.php');
                 </div>
             </div>
             <div class="inputfield">
-                <label>Telefon</label>
-                <input id="telefon" type="text" class="input" placeholder="+98 123456789">
+                <label for="telefon">Telefon</label>
+                <input id="telefon" name="telefon" type="text" class="input" placeholder="+98 123456789">
             </div>
             <div class="inputfield">
-                <label>Ihre Nachricht</label>
-                <textarea id="nachricht" class="textarea" placeholder="I m feeling good!"></textarea>
+                <label for="nachricht">Ihre Nachricht</label>
+                <textarea id="nachricht" name="nachricht" class="textarea" placeholder="I m feeling good!"></textarea>
             </div>
             <div class="inputfield">
-                <label>PLZ</label>
-                <input type="text" class="input">
+                <label for="plz">PLZ</label>
+                <input id="plz" name="plz" type="text" class="input" required>
             </div>
             <div class="inputfield terms">
                 <label class="check">
-                    <input type="checkbox">
+                    <input type="checkbox" required>
                     <span class="checkmark"></span>
                 </label>
                 <p>Ich erkläre mich damit einverstanden, dass meine personenbezogenen Daten nur zum Zwecke
@@ -76,7 +76,7 @@ include('../templates/header.php');
             </div>
             <div class="inputfield">
                 <button type="submit">senden</button><br>
-                <button type="rest">zurücksetzen</button>
+                <button type="reset">zurücksetzen</button>
             </div>
         </div>
         </form>
