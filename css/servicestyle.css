@@ -1,16 +1,32 @@
+#servicesgrid {
+    display: grid;
+    height: 90vh;
+    width: 100%;
+    background-image: url("../assets/images/stockphotoweerkstattinhead.jpeg");
+    background-size: cover;
+}
+#showcaseservice {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0px 40px 0px;
+}
+#expservice {
+    grid-area: exp;
+    text-align: center;
+    color: black;
+    text-shadow: 10px 9px 10px whitesmoke;
+    font-size: 10vw;
+    font-family: "Gloria Hallelujah", cursive;
+}
 .container {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr;
+    grid-template-rows: 1.5fr 1.2fr;
     grid-template-areas:
-    "header header header"
     "card1 card2 card3"
-    "card4 card5 card6"
-}
-header{
-    background: #78C4D5;
-    grid-area: header;
+    "card4 card5 card6";
+    padding: 1px 60px 45px 60px;
 }
 main{
     background: #F7ED85;
@@ -40,6 +56,8 @@ footer{
 }
 .card-header{
     text-align: center;
+    font: 300 34px/38px "Georgia";
+    color: #4A4F55;
 }
 .card-logo{
     text-align: center;
@@ -50,4 +68,11 @@ footer{
 .card-svg{
     height: 24px;
     width: 24px;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
