@@ -66,6 +66,9 @@
     </p>
 
 </div>
+<?php include('./php/templates/datenschutz.php');?>
+<?php include('./php/templates/impressum.php');?>
+
     <div id="footer">
         
     <footer>
@@ -84,8 +87,8 @@
     <div class="footer-bottom">
         <p>copyright &copy;2022 Auto-Care. designed by <span>Group 7</span></p>
         <div class="privacy">
-            <a href="./php/pages/impressum.php" class="impressum">Impressum</a> |
-            <a href="./php/pages/datenschutz.php" class="datenschutz">Datenschutz</a>
+            <a href="#impressum" class="impressum">Impressum</a> |
+            <a href="#datenschutz" class="datenschutz">Datenschutz</a>
         </div>
     </div>
 </footer>
