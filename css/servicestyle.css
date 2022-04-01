@@ -4,6 +4,7 @@
     width: 100%;
     background-image: url("../assets/images/stockphotoweerkstattinhead.jpeg");
     background-size: cover;
+    border: 140px;
 }
 #showcaseservice {
     display: flex;
@@ -11,12 +12,11 @@
     margin: 150px 0px 40px 0px;
 }
 #expservice {
-    grid-area: exp;
     text-align: center;
-    color: black;
     text-shadow: 10px 9px 10px whitesmoke;
     font-size: 10vw;
     font-family: "Gloria Hallelujah", cursive;
+    color: black;
 }
 .container {
     display: grid;
@@ -27,6 +27,8 @@
     "card1 card2 card3"
     "card4 card5 card6";
     padding: 1px 60px 45px 60px;
+    gap: 5px;
+    margin-top: 20px;
 }
 main{
     background: #F7ED85;
@@ -56,7 +58,9 @@ footer{
 }
 .card-header{
     text-align: center;
-    font: 300 34px/38px "Georgia";
+    font-weight: 300;
+    font-size: 34px;
+    font-family: "Georgia";
     color: #4A4F55;
 }
 .card-logo{
@@ -66,13 +70,35 @@ footer{
 
 }
 .card-svg{
-    height: 24px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
 }
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
+p{
+    margin: 1em 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 1000px){
+    .card-header{
+        font-weight: 200;
+        font-size: 24px;
+    }
+}
+@media (max-width: 728px) {
+    #servicesgrid {
+        height: 50vh;
+    }
+}
+@media (max-width: 600px) {
+    .card-header{
+        font-weight: 150;
+        font-size: 18px;
+    }
+}
+@media (max-width: 440px) {
+    .container {
+        padding: 1px 0 45px 0;
+    }
 }
