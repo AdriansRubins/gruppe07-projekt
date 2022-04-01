@@ -1,4 +1,4 @@
-button {
+li a {
     padding: 9px 25px;
     background-color: black;
     font-family: "Montserrat",sans-serif;
@@ -13,7 +13,8 @@ button {
     text-decoration: none;
 }
 
-button:hover ,button.active {
+li a:hover,
+li a.active {
     background-color: #82888C;
     color: white;
     box-shadow: 0px 5px 5px 0px black;

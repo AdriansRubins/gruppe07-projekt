@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Play&display=swap" rel="stylesheet">
-    <link href="stylesheet" href="../../assets/fonts/fontawesome-free-6.1.0-web/css/.brands.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/autosstyle.css">
     <link rel="stylesheet" href="../../css/footerstyle.css">
@@ -18,8 +17,8 @@
 </head>
 <body>
 <?php
-    $currentPage = 'autos';
-    include ('../templates/header.php');
+$currentPage = 'autos';
+include ('../templates/header.php');
 ?>
 <br>
 <div class="topbox">
@@ -37,7 +36,7 @@ if (!empty($_GET['purchase'])) {
     <div class="car1">
         <div class="car1-name">
             <h2 id="lamborghiniName">Lamborghini Huracán LP610-4 Coupé</h2>
-            <button type="submit">Buy Now</button>
+            <button class="button" type="submit">Buy Now</button>
         </div>
         <div class="car1-des">
             <p id="lamborghiniDes">
@@ -59,7 +58,7 @@ if (!empty($_GET['purchase'])) {
 
         <div class="car2-name">
             <h2 id="teslaModel3Name">Tesla Model 3</h2>
-            <button type="submit">Buy Now</button>
+            <button class="button" type="submit">Buy Now</button>
         </div>
         <div class="car2-des">
             <p id="teslaDes">
@@ -79,7 +78,7 @@ if (!empty($_GET['purchase'])) {
 
         <div class="car3-name">
             <h2 id="porscheName">Porsche 718 Cayman GT4 RS</h2>
-            <button type="submit">Buy Now</button>
+            <button class="button" type="submit">Buy Now</button>
         </div>
         <div class="car3-des">
             <p id="porscheDes">

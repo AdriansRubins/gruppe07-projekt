@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Play&display=swap" rel="stylesheet">
-    <link href="stylesheet" href="../../assets/fonts/fontawesome-free-6.1.0-web/css/.brands.css">
     <link rel="stylesheet" href="../../css/headerstyle.css">
     <link rel="stylesheet" href="../../css/footerstyle.css">
     <link rel="stylesheet" href="../../css/kontaktstyle.css">
@@ -75,8 +74,8 @@ include('../templates/header.php');
                     Die Daten werden nur für die hier aufgeführten Zwecke verwendet und nicht an Dritte weitergegeben.</p>
             </div>
             <div class="inputfield">
-                <button type="submit">senden</button><br>
-                <button type="reset">zurücksetzen</button>
+                <button class="button" type="submit">Absenden</button><br>
+                <button class="button" type="reset">Surücksetzen</button>
             </div>
         </div>
         </form>
