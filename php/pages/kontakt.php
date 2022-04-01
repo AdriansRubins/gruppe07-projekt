@@ -23,65 +23,113 @@
 ?>
 <br>
 <div class="kontaktgrid">
-    <div class="form">
-        <form action="../forms/answer.php" method="post">
-            <h1>Konkaktformular</h1>
-            <label for="vn_vorname">Vorname:</label><br>
-            <input id="vn_vorname" class="inputfield" type="text" placeholder="Vorname" name="vn_vorname" required><br>
-            <label for="nn_nachname">Nachname:</label><br>
-            <input id="nn_nachname" class="inputfield" type="text" placeholder="Nachname" name="nn_nachname" required><br>
-            <label for="mail">Mailadresse:</label><br>
-            <input id="mail" class="inputfield" type="email" placeholder="Mailadresse" name="mail" required><br>
-            <label for="telefon">Telefon:</label><br>
-            <input id="telefon" class="inputfield" type="text" placeholder="Telefon" name="telefon"><br>
-            <label for="nachricht">Ihre Nachricht:</label><br>
-            <textarea id="nachricht" class="inputfield" placeholder="Ihre Nachricht" required name="nachricht"></textarea><br>
-            <p id="nachricht"><input type="checkbox" required>Ich erkläre mich damit einverstanden, dass meine personenbezogenen Daten nur zum Zwecke
-                der Bearbeitung im Rahmen des Kontaktformulars verarbeitet und gespeichert werden.
-                Die Daten werden nur für die hier aufgeführten Zwecke verwendet und nicht an Dritte weitergegeben.
-            </p>
-            <button class="inputfield" type="submit">Absenden</button><button class="inputfield" type="reset">Zurücksetzen</button>
+    <div class="wrapper2">
+        <form action="../forms/answer.php" method="post"></form>
+        <div class="form">
+            <br>
+            <br>
+            <h2 class="kontaktform" >Kontaktformular</h2>
+            <br>
+            <div class="inputfield">
+                <label>Vorname</label>
+                <input id="vn_vorname" type="text" class="input" placeholder="Vorname">
+            </div>
+            <div class="inputfield">
+                <label>Nachname</label>
+                <input id="nn_nachname"type="text" class="input" placeholder="Nachname">
+            </div>
+            <div class="inputfield">
+                <label>E-Mail</label>
+                <input id="mail"type="mail" class="input" placeholder="example@mail.com" required>
+            </div>
+            <div class="inputfield">
+                <label>Land</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select</option>
+                        <option value="germany">Germany</option>
+                        <option value="latvia">Latvia</option>
+                        <option value="india">India</option>
+                        <option value="england">England</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>Telefon</label>
+                <input id="telefon" type="text" class="input" placeholder="+98 123456789">
+            </div>
+            <div class="inputfield">
+                <label>Ihre Nachricht</label>
+                <textarea id="nachricht" class="textarea" placeholder="I m feeling good!"></textarea>
+            </div>
+            <div class="inputfield">
+                <label>PLZ</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield terms">
+                <label class="check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <p>Ich erkläre mich damit einverstanden, dass meine personenbezogenen Daten nur zum Zwecke
+                    der Bearbeitung im Rahmen des Kontaktformulars verarbeitet und gespeichert werden.
+                    Die Daten werden nur für die hier aufgeführten Zwecke verwendet und nicht an Dritte weitergegeben.</p>
+            </div>
+            <div class="inputfield">
+                <button type="submit">senden</button><br>
+                <button type="rest">zurücksetzen</button>
+            </div>
+        </div>
         </form>
+
     </div>
     <div class="helper">
-        <h1 id="headinghelper">Ansprechpartner</h1>
-        <img class="pictures" src="../../assets/images/1.jpg">
-        <img class="pictures" src="../../assets/images/2.jpg">
-        <div class="Textposition">
-            <p>
-            <ul class="unsortedlist">
-                <h3>7239202</h3>
-                <li>Tel: 01654398936</li>
-                <li>Email: </li>
-            </ul>
-            </p>
-            <p>
-            <ul class="unsortedlist">
-                <h3>7239202</h3>
-                <li>Tel: 01654398936</li>
-                <li>Email: </li>
-            </ul>
-            </p>
+        <div class="headingpartner">
+            <h1>Ansprechpartner</h1>
+
         </div>
-        <img class="pictures" src="../../assets/images/3.jpg">
-        <img class="pictures" src="../../assets/images/4.jpg">
-        <div class="Textposition">
+        <div class="avatar1">
+            <img class="avatarb"src="../../assets/images/1.jpg">
             <p>
-            <ul class="unsortedlist">
-                <h3>7239202</h3>
-                <li>Tel: 01654398936</li>
-                <li>Email: </li>
-            </ul>
+                ID: 7239202<br>
+                Tel: 0123456789<br>
+                email: avatar1@dhbw.de
             </p>
-            <p>
-            <ul class="unsortedlist">
-                <h3>8577349</h3>
-                <li>Tel: 01654398936</li>
-                <li>Email: ber.schwab.21@lehre.mosbach.dhbw.de</li>
-            </ul>
-            </p>
+
         </div>
+        <div class="avatar2">
+            <img class="avatarb" src="../../assets/images/2.jpg">
+            <p>
+                ID: 8577349<br>
+                Tel: 0123456789<br>
+                email: avatar2@dhbw.de
+
+            </p>
+
+        </div>
+        <div class="avatar3">
+            <img class="avatarb" src="../../assets/images/3.jpg">
+            <p>
+                ID: 7239202<br>
+                Tel: 0123456789<br>
+                email: avatar3@dhbw.de
+
+            </p>
+
+        </div>
+        <div class="avatar4">
+            <img class="avatarb" src="../../assets/images/4.jpg">
+            <p>
+                ID: 8577349<br>
+                Tel: 0123456789<br>
+                email: avatar4@dhbw.de
+
+            </p>
+
+        </div>
+
     </div>
+
 </div>
 <?php
     include('../templates/footer.php');
